@@ -95,10 +95,11 @@ function drawArc(opt = {}) {
   } else {
     context.fill();
   }
-  if (opt.index) {
+  if (typeof opt.index !== 'undefined') {
+    let len = String(opt.index).length
     context.font = '20px Arial';
     context.fillStyle = 'red';
-    context.fillText(opt.index, opt.x, opt.y);
+    context.fillText(opt.index, opt.x - len * 20 / 4, opt.y + len * 20 / 4);
   }
 }
 

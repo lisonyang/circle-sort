@@ -171,7 +171,6 @@ function draw() {
       x: e.x,
       y: e.y,
       radius: e.radius,
-      stroke: true,
       index: i
     })
   })
@@ -179,7 +178,7 @@ function draw() {
 
 function drawScreen() {
   // requestAnimationFrame(drawScreen)
-  // drawBG()
+  drawBG()
   draw()
     // testIntersection()
 }
